@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react'
-import shape from '../assets/shape.svg';
+import Shape from '../assets/Shape.svg';
 import './css/AboutUs.css';
 import aboutfoto1 from '../assets/one.jpg';
 import aboutfoto2 from '../assets/two.jpg';
@@ -34,7 +34,7 @@ const AboutUs = () => {
 
     return (
         <div className='container about'>
-            <img src={shape} alt="" className="shape" />
+            <img src={Shape} alt="" className="shape" />
             <div className='about-limitter'>
                 <div className="fotos" ref={fotosRef}>
                     {images.map((image, index) => (
