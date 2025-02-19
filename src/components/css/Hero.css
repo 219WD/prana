@@ -1,0 +1,138 @@
+.container.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.card_wrapper {
+    position: relative;
+}
+
+.card-image-with-svg-mask {
+    width: 80vw;
+    height: 80vh;
+    background-image: linear-gradient(to left, rgba(104, 109, 72 ,1), rgba(0, 0, 0, 0)), url("/src/assets/hero2.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: scroll;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    position: relative;
+}
+
+/* mask image */
+.card-image-with-svg-mask {
+    -webkit-mask: url("/src/assets/top-center.png") center / contain no-repeat, url("/src/assets/bottom-right.png") center / contain no-repeat, linear-gradient(#000000 0 0);
+    mask-size: 22rem, 30rem;
+    mask-position: top center, bottom right;
+    mask-composite: exclude;
+}
+
+p.text {
+    color: #e7dac5;
+    width: 350px;
+    position: absolute;
+    right: 5%;
+    top: 2%;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: var(--text-font-regular);
+}
+
+.button-hero {
+    position: absolute;
+    background-color: #696e47;
+    border-radius: 1.5rem;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-center {
+    width: 240px;
+    height: 95px;
+    top: 12%;
+    right: 0%;
+    left: 0%;
+    margin: 0 auto;
+}
+
+.top-center .text {
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: url("/src/assets/Sin\ título.png") top / cover no-repeat;
+    background-clip: text;
+    color: #686d48;
+    font-family: var(--text-font-uppercase);
+}
+
+.bottom-right {
+    width: 380px;
+    height: 160px;
+    border-radius: 2.5rem;
+    bottom: 10%;
+    right: 10%;
+}
+
+.bottom-right .text {
+    font-size: 19px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    font-family: var(--text-font-bold);
+}
+
+
+@media (max-width: 768px) {
+    .card-image-with-svg-mask {
+        width: 90vw;
+        height: 95vh;
+        background-size: cover;
+    }
+
+    .card-image-with-svg-mask {
+        mask-size: 11rem, 20rem;
+    }
+
+    .top-center {
+        width: 7rem;
+        height: 60px;
+        top: 2%;
+        right: 0%;
+        left: 0%;
+        margin: 0 auto;
+        border-radius: 1rem;
+    }
+
+    .logo-hero {
+        width: 70px;
+    }
+
+    p.text {
+        left: 3%;
+        top: 15%;
+        font-size: 1.5rem;
+    }
+
+    .bottom-right {
+        width: 270px;
+        height: 100px;
+        border-radius: 1.5rem;
+        bottom: 4%;
+        right: 30%;
+    }
+
+    .bottom-right .text {
+        font-size: 15px;
+        text-align: center;
+        position: relative;
+        color: #fff;
+        font-family: var(--text-font-bold);
+    }
+}

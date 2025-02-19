@@ -1,0 +1,148 @@
+.fondo-contacto {
+    background-color: #1c1c1c;
+    color: white;
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Encabezado */
+.titulo-principal {
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 40px;
+    font-family: var(--text-font-uppercase);
+    text-transform: uppercase;
+}
+
+.fondo-contacto p,
+.enlace {
+    font-family: var(--text-font-bold);
+}
+
+/* Grid principal */
+.grid-principal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Sección de información */
+.grid-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.subtitulo {
+    font-family: var(--text-font-uppercase);
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.enlace {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.enlace:hover {
+    text-decoration: underline;
+}
+
+/* Redes sociales */
+.redes {
+    display: flex;
+    gap: 10px;
+}
+
+.icono-red {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.icono-red:hover {
+    opacity: 0.8;
+}
+
+/* Horario */
+.horario {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px 10px;
+    font-size: 14px;
+}
+
+/* Boletín */
+.boletin {
+    margin: 40px 0;
+}
+
+.boletin h3 {
+    font-family: var(--text-font-uppercase);
+}
+
+.input-correo {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-top: 10px;
+    font-family: var(--text-font-bold);
+}
+
+/* Enlaces del pie */
+.enlaces-pie {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.boton-secundario {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.boton-secundario:hover {
+    background-color: white;
+    color: black;
+}
+
+.dosDiecinueve hr {
+    margin: 1rem 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .grid-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-info {
+        grid-template-columns: 1fr;
+    }
+
+    .titulo-principal {
+        font-size: 40px;
+    }
+
+    .enlaces-pie {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,53 @@
+.container.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 1rem; /* Separación entre video y texto */
+}
+
+.videos-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem; /* Espacio entre el logo y el texto */
+}
+
+.videos-text p {
+    font-family: var(--text-font-bold);
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    text-align: left;
+    margin: 0; /* Eliminamos el margen superior */
+}
+
+.logo-videos {
+    width: 100%;
+    max-width: 300px;
+}
+
+.vimeo-container iframe {
+    width: 30vw;
+}
+
+
+@media (max-width: 768px) {
+    .container.videos {
+        flex-direction: column;
+    }
+
+    .vimeo-container iframe {
+        width: 90vw !important;
+    }
+
+    .videos-text p {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+}

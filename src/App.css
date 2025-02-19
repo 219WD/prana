@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Orbitron:wght@400..900&family=Zen+Dots&display=swap');
+
+:root {
+    --text-color-claro: #fff;
+    --text-font-uppercase: "Zen Dots", serif;
+    --text-font-regular: "Goldman", serif;
+    --text-font-bold: "Orbitron", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}

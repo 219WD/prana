@@ -1,0 +1,20 @@
+.vimeo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.vimeo-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 45vw;
+    max-height: 450px;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .vimeo-container iframe {
+        height: 150vh;
+    }
+}

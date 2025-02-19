@@ -1,0 +1,78 @@
+.container.about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    /* Fondo de color */
+    background-color: rgba(229, 222, 212, 0.9);
+
+    /* Imagen de fondo */
+    background-image: url("/src/assets/Texturelabs_Concrete_195M.jpg");
+    background-size: cover;
+    background-position: center;
+
+    /* Mezcla de colores (efecto "Multiplicar") */
+    background-blend-mode: multiply;
+}
+
+.about-limitter {
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    width: 30%;
+    font-family: var(--text-font-regular);
+    color: #585d39;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centra verticalmente */
+    align-items: flex-start;
+    /* Alinea las imágenes a la izquierda */
+    position: absolute;
+    left: 0;
+    /* Mantiene las imágenes a la izquierda */
+    top: 50%;
+    /* Centra verticalmente */
+    transform: translateY(-50%);
+    /* Ajusta para que el centro del contenedor quede alineado */
+    height: 100%;
+    /* Asegura que ocupe toda la altura */
+}
+
+.foto img {
+    height: 200px;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.shape {
+    width: 300px;
+}
+
+
+@media (max-width: 768px) {
+    .about-text {
+        width: 90%;
+        font-family: var(--text-font-regular);
+        color: #585d39;
+        font-size: 1.2rem;
+    }
+    .fotos {
+        display: none;
+    }
+
+}
