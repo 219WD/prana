@@ -1,0 +1,49 @@
+.container.preload {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.step-1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.step-1 h3 {
+    font-size: 2rem;
+    color: #000;
+    margin-top: 1rem;
+    font-family: var(--text-font-bold);
+}
+
+.step-2 h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 1rem;
+    font-family: var(--text-font-bold);
+}
+
+.step-2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
